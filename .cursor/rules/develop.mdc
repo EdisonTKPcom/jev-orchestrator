@@ -1,0 +1,10 @@
+---
+description: How to work on the jev-orchestrator CLI
+alwaysApply: true
+---
+
+- This repo is the jev-orchestrator CLI. Protocol v1 is `docs/protocol.md`.
+- Run `npm test` after a behaviour change. `npm run demo` must keep refusing the second claim.
+- Do not add a network call to claim, handoff, or the demo.
+- Do not invent Codex config keys. Adapters are `AGENTS.md`, `CLAUDE.md` (`@AGENTS.md`), `.cursor/rules/*.mdc`, and `.devin/rules/*.md`.
+- Consumer copy that `init` writes lives in `adapters/protocol.md`, not in this rule.

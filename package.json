@@ -1,0 +1,51 @@
+{
+  "name": "@edisontkp/jev-orchestrator",
+  "version": "0.1.0",
+  "description": "Local work board so Cursor, Claude Code, Codex, and Devin can claim one task, hand off context, and stay out of each other's files.",
+  "type": "module",
+  "bin": {
+    "jev-orchestrator": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "adapters",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "demo": "tsx src/cli.ts demo"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdisonTKPcom/jev-orchestrator.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "coding-agents",
+    "cursor",
+    "claude-code",
+    "codex",
+    "devin",
+    "orchestrator"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
